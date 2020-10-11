@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="./map.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Safeguard Seattle</title>
+    <style>
+      body{
+        background-color:#D3D3D3
+      }
+    </style>
+    <link rel="stylesheet" href="widget.css">
+  </head>
+  <body style = "background: linear-gradient(180deg, rgba(18,20,22,1) 0%, rgba(18,20,22,1) 61%, rgba(142,80,0,1) 100%);">
+      <div class="topic">
+        <h6>Made with love for sunhacks <3 | Build v0.0.1</h6>
+        <div class="logocontainer">
+          <img src="SGSLogo.png" alt="Logo">
+        </div>
+      </div>
+        
+
+      <!-- <div class="container"> -->
+        <div class = content>
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="btn-group">
+            <!-- start sw-rss-feed code -->
+            <script type="text/javascript">
+            <!--
+            rssfeed_url = new Array();
+            rssfeed_url[0]="https://news.google.com/rss/search?q=seattle+hate+crimes&hl=en-US&gl=US&ceid=US:en";
+            rssfeed_frame_width="300";
+            rssfeed_frame_height="936";
+            rssfeed_scroll="on";
+            rssfeed_scroll_step="6";
+            rssfeed_scroll_bar="off";
+            rssfeed_target="_blank";
+            rssfeed_font_size="12";
+            rssfeed_font_face="";
+            rssfeed_border="on";
+            rssfeed_css_url="https://dl.dropbox.com/s/xqy4k4jlh91t5la/test.css";
+            rssfeed_title="on";
+            rssfeed_title_name="SEATTLE HATE CRIME FEED";
+            rssfeed_title_bgcolor="#3366ff";
+            rssfeed_title_color="#fff";
+            rssfeed_title_bgimage="";
+            rssfeed_footer="off";
+            rssfeed_footer_name="rss feed";
+            rssfeed_footer_bgcolor="#fff";
+            rssfeed_footer_color="#333";
+            rssfeed_footer_bgimage="";
+            rssfeed_item_title_length="50";
+            rssfeed_item_title_color="#666";
+            rssfeed_item_bgcolor="#fff";
+            rssfeed_item_bgimage="";
+            rssfeed_item_border_bottom="on";
+            rssfeed_item_source_icon="off";
+            rssfeed_item_date="off";
+            rssfeed_item_description="on";
+            rssfeed_item_description_length="120";
+            rssfeed_item_description_color="#666";
+            rssfeed_item_description_link_color="#333";
+            rssfeed_item_description_tag="off";
+            rssfeed_no_items="0";
+            rssfeed_cache = "e2cf6730171ea89bfcdf538324d132c5";
+            //-->
+            </script>
+            <script type="text/javascript" src="http://feed.surfing-waves.com/js/rss-feed.js"></script>
+            </div>
+          </div>
+          <div class="col-sm-10">
+              
+            <form>
+              <div class="btn-group" type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <select id="race" class="form-control">
+                  <option selected>Race/Ethnicity</option>
+                  <option value = White">White</option>
+                  <option value = "Black">Black</option>
+                  <option value = "Islander">Pacific Islander</option>
+                  <option value = "Asian">Asian</option>
+                  <option>Arab</option>
+                  <option>Indigenous</option>
+                  <option>Hispanic</option>
+                </select>
+              </div>
+              <div class="btn-group" type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <select id="gender" class="form-control">
+                  <option selected>Gender</option>
+                  <option value = "Male">Male</option>
+                  <option value = "Female">Female</option>
+                  <option>Nonconformative</option>
+                </select>
+              </div>
+              <div class="btn-group" type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <select id="sexuality" class="form-control">
+                  <option selected>Sexuality</option>
+                  <option value = "Gay">Gay</option>
+                  <option value = "Lesbian">Lesbian</option>
+                  <option value = "Transgender">Transgender</option>
+                  <option value = "Bi">Bisexual</option>
+                  <option value = "Hetero">Heterosexual</option>
+                </select>
+              </div>
+              <div class="btn-group" type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <select id="religion" class="form-control">
+                  <option selected>Religion</option>
+                  <option value = "Christian">Christian</option>
+                  <option value = "Catholic">Catholic</option>
+                  <option value = "Hindu">Hindu</option>
+                  <option value = "Muslim">Muslim</option>
+                  <option value = "Jewish">Jewish</option>
+                </select>
+              </div>
+                <button id = "submission" type="submit" class="btn btn-dark" style= "margin-bottom: 10px; font-family: Verdana, Geneva, sans-series;" >Submit</button>
+          </form>    
+        
+            <!--The div element for the map -->
+            <div id="map"></div>
+            <div id="description">
+              <h5 style = "color: white; font-weight: normal">DESCRIPTION</h5>
+              <p style = "color:white">The orange circles represent the concentration of hate crimes based on every micro-community within Seattle. Please feel free to identify yourself with the dropdown menus and check to see your risk levels in the Seattle metropolitan area. We hope to educate the general public about the prejudice levels for every demographic and provide a safer outlook for marginalized individuals. The data is taken from the SPD database on bias/hate crime which is maintained regularly by the bias unit. The data has been repackaged and reformatted from various broken .csv files and handwritten report entries into a readable and comprehensive layout for the safety of all.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3oeWI7OkJQWnYyBKNG2aJVZl1J5MJea8&callback=initMap">
+    </script>
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="map.js"></script>
+  </body>
+</html>

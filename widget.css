@@ -1,0 +1,20 @@
+body{margin:0;padding:0;}
+img {border:0px;}
+.feed-container{font-size:12px;border:1px solid #CCC;font-family: Verdana, Geneva, sans-serif}
+.feed-container .header{margin:0px;padding:5px 5px 5px 5px;color:#fff;background-color:#121416;}
+.feed-container .footer{margin:0px;padding:5px 5px 5px 5px;color:#fff;}
+.feed-container .header .title{margin:0;padding:0;font-weight: normal;color: white; font-size: 17px;}
+.feed-container .header a:link{color:#fff;text-decoration:none;}
+.feed-container .header a:visited{color:#fff;text-decoration:none;}
+.feed-container .header a:hover{color:#fff;text-decoration:underline;}
+.feed-container .header a:active{color:#fff;text-decoration:none;}
+.feed-container .content{margin:0px;padding:0 3px;background-color: rgba(105, 105, 105, 0.5);}
+.feed-container .content .item{margin:0 0 7px 0;padding:0 0 7px 0;border-bottom:1px dashed #CCCCCC;}
+.feed-container .content .item .title{margin:1px 0 1px 3px;padding:1px 2px 1px 3px;color:#e9a935;font-weight:bold;}
+.feed-container .content .item .title a:link{color:#e9a935;text-decoration:none;}
+.feed-container .content .item .title a:visited{color:#e9a935;text-decoration:none;}
+.feed-container .content .item .title a:hover{color:#e9a935;text-decoration:underline;}
+.feed-container .content .item .title a:active{color:#e9a935;text-decoration:none;}
+.feed-container .content .item .description{margin:0 0 0 3px;padding:0 2px 0 3px;color:lightgray;font-size: 10px}
+.feed-container .content .item .description a{text-decoration:none;color:#e9a935;}
+.feed-container .content .item .description a:hover{text-decoration:underline;color:#e9a935;}

@@ -1,0 +1,7 @@
+# Function dependencies, for example:
+# package>=version
+
+requests == 2.24.0
+numpy == 1.19.2
+pandas == 1.1.2
+google-cloud-firestore
